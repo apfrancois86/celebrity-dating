@@ -3,7 +3,6 @@ $(document).ready(function(){
 
   $("form#blanks").submit(function(event) {
 
-
     var genderInput = $("#gender").val();
     var genderSeekingInput = $("#genderSeeking").val();
     var personalityInput = $("#personality").val();
@@ -26,8 +25,10 @@ $(document).ready(function(){
         $("#blanks").hide();
       }
     } else {
-      alert("Please enter a note");
-    }
+        alert("Please enter a note");
+        $("#note").parent().addClass("has-error");
+        return false;
+      }
     event.preventDefault();
   });
   $("#johng button").click(function(){
