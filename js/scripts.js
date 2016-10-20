@@ -8,8 +8,8 @@ $(document).ready(function(){
     var personalityInput = $("#personality").val();
     var bodytypeInput = $("#bodytype").val();
     var bodytypeSeekingInput = $("#bodytypeSeeking").val();
-    var petInput = $("input:radio[namej=pet]:checked").val();
-    var hobbiesInput = $("input:radio[namej=hobbies]:checked").val();
+    var petInput = $("input:radio[name=pet]:checked").val();
+    var hobbiesInput = $("input:radio[name=hobbies]:checked").val();
     var noteInput = $("#note").val();
 
     if (noteInput) {
@@ -19,6 +19,9 @@ $(document).ready(function(){
         $("#blanks").hide();
       } else if (genderInput === "man" && genderSeekingInput === "woman" && personalityInput === "extrovert" && bodytypeSeekingInput === "athletic"){
         $("#serena").show();
+        $("#blanks").hide();
+      } else if (genderInput === "man" && genderSeekingInput === "woman" && personalityInput === "introvert" && petInput === "dog" && hobbiesInput === "arts") {
+        $("#amanda").show();
         $("#blanks").hide();
       } else {
         $("#carrot-top").show();
@@ -38,6 +41,9 @@ $(document).ready(function(){
     location.reload();
   });
   $("#serena button").click(function(){
+    location.reload();
+  });
+  $("#amanda button").click(function(){
     location.reload();
   });
 });
