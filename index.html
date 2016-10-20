@@ -5,14 +5,18 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <title>Star Match</title>
   </head>
   <body>
     <div class="container">
       <div class="well">
-        <h1 class="jumbotron">Star Match</h1>
-        <h4>Shoot for the stars!</h4>
         <form id="blanks">
+          <h1 class="jumbotron">Star Match</h1>
+          <div class="panel">
+            <h4 class="panel-heading">Shoot for the stars!</h4>
+            <p class="panel-body">Welcome to Star Match.com. The world premier celebrity dating site. We are proud to offer celebrity matches for anyone in the biz.</p>
+          </div>
           <div id="formblanks">
             <div class="row">
               <div class="col-md-4">
@@ -107,6 +111,10 @@
                 </div>
               </div><!--end of col 2-->
               <div class="col-md-4">
+                <div class="form-group">
+                  <label for="note">Tell us about Yourself</label>
+                  <input id="note" class="form-control" type="text">
+                </div>
                 <button type="submit" class="btn button-primary">Find my Star!</button>
               </div>
             </div><!--end of row-->
@@ -115,22 +123,25 @@
 
         <div id="johng">
           <div class="well">
-            <h1 class="jumbotron">You matched with John Goodman!</h1>
+            <h2>You matched with John Goodman!</h2>
             <img src="img/john.jpg" alt="John Goodman">
+            <button type="submit" class="btn">Try Again</button>
           </div>
         </div><!--end johng-->
 
         <div id="serena">
           <div class="well">
-            <h1 class="jumbotron">You matched with Serena Williams!</h1>
+            <h2>You matched with Serena Williams!</h2>
             <img src="img/serena.jpg" alt="Serena Williams">
+            <button type="submit" class="btn">Try Again</button>
           </div>
         </div><!--end serena-->
 
         <div id="carrot-top">
           <div class="well">
-            <h1 class="jumbotron">You matched with Carrot Top!</h1>
+            <h2>You matched with Carrot Top!</h2>
             <img src="img/carrottop.jpg" alt="Carrot Top">
+            <button type="submit" class="btn">Try Again</button>
           </div>
         </div><!--end carrot top-->
 

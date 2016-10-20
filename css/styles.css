@@ -4,3 +4,25 @@
  #johng img, #serena img, #carrot-top img {
    width: 100%;
  }
+ .jumbotron {
+   background-image: url(../img/star.jpg);
+   color: white;
+   text-align: center;
+   font-family: 'Bungee Inline', cursive;
+   font-size: 15em;
+ }
+body {
+  background-color: black;
+}
+.well {
+  border-radius: 0px;
+  background-color: lightyellow;
+}
+
+h2 {
+  background-image: url(../img/star.jpg);
+  color: white;
+  text-align: center;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 10em;
+}
