@@ -1,3 +1,6 @@
-#johng {
+#johng, #serena, #carrot-top {
   display: none;
 }
+ #johng img, #serena img, #carrot-top img {
+   width: 100%;
+ }

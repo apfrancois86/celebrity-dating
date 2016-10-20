@@ -14,7 +14,12 @@ $(document).ready(function(){
 
     if (genderInput === "woman" && genderSeekingInput === "man" && personalityInput === "extrovert" && bodytypeSeekingInput === "husky") {
       $("#johng").show();
+    } else if (genderInput === "man" && genderSeekingInput === "woman" && personalityInput === "extrovert" && bodytypeSeekingInput === "athletic"){
+      $("#serena").show();
+    } else {
+      ("#carrot-top").show();
     }
+
 
     event.preventDefault();
   });
