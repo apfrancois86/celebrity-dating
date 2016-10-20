@@ -12,104 +12,112 @@
       <div class="well">
         <h1 class="jumbotron">Star Match</h1>
         <h4>Shoot for the stars!</h4>
-        <form>
-          <div class="row">
-            <div class="col-md-4">
-              <label>I am a:</label>
-              <select class="form-control" id="gender">
-                <option>Man</option>
-                <option>Woman</option>
-                <option>Other</option>
-              </select>
-              <label>Seeking a:</label>
-              <select class="form-control" id="gender">
-                <option>Man</option>
-                <option>Woman</option>
-                <option>Other</option>
-              </select>
-              <label>Personality Type:</label>
-              <select class="form-control" id="personality">
-                <option>Extrovert</option>
-                <option>Introvert</option>
-                <option>A little bit of both</option>
-              </select>
-              <label>Your Body Type:</label>
-              <select class="form-control" id="bodytype">
-                <option>Athletic</option>
-                <option>Husky</option>
-                <option>Large and in Charge</option>
-                <option>Scrawny</option>
-                <option>Ripped</option>
-                <option>Average</option>
-              </select>
-              <label>Body Type you are looking for:</label>
-              <select class="form-control" id="bodytypeSeeking">
-                <option>Athletic</option>
-                <option>Husky</option>
-                <option>Large and in Charge</option>
-                <option>Scrawny</option>
-                <option>Ripped</option>
-                <option>Average</option>
-              </select>
-            </div><!--end of col 1-->
-            <div class="col-md-4">
-              <label>Pet Preference:</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pet" value="dog" checked>
-                  Dog Person
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pet" value="cat">
-                  Cat Person
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pet" value="all">
-                  All-around Pet Lover
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pet" value="no">
-                  No Pets Please!
-                </label>
-              </div>
+        <form id="blanks">
+          <div id="formblanks">
+            <div class="row">
+              <div class="col-md-4">
+                <label>I am a:</label>
+                <select class="form-control" id="gender">
+                  <option value="man">Man</option>
+                  <option value="woman">Woman</option>
+                  <option value="other">Other</option>
+                </select>
+                <label>Seeking a:</label>
+                <select class="form-control" id="genderSeeking">
+                  <option value="man">Man</option>
+                  <option value="woman">Woman</option>
+                  <option value="other">Other</option>
+                </select>
+                <label>Personality Type:</label>
+                <select class="form-control" id="personality">
+                  <option value="extrovert">Extrovert</option>
+                  <option value="introvert">Introvert</option>
+                  <option value="both">A little bit of both</option>
+                </select>
+                <label>Your Body Type:</label>
+                <select class="form-control" id="bodytype">
+                  <option value="athletic">Athletic</option>
+                  <option value="husky">Husky</option>
+                  <option value="large">Large and in Charge</option>
+                  <option value="scrawny">Scrawny</option>
+                  <option value="ripped">Ripped</option>
+                  <option value="average">Average</option>
+                </select>
+                <label>Body Type you are looking for:</label>
+                <select class="form-control" id="bodytypeSeeking">
+                  <option value="athletic">Athletic</option>
+                  <option value="husky">Husky</option>
+                  <option value="large">Large and in Charge</option>
+                  <option value="scrawny">Scrawny</option>
+                  <option value="ripped">Ripped</option>
+                  <option value="average">Average</option>
+                </select>
+              </div><!--end of col 1-->
+              <div class="col-md-4">
+                <label>Pet Preference:</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="pet" value="dog" checked>
+                    Dog Person
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="pet" value="cat">
+                    Cat Person
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="pet" value="all">
+                    All-around Pet Lover
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="pet" value="no">
+                    No Pets Please!
+                  </label>
+                </div>
 
-              <label>Hobbies:</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="hobbies" value="cars" checked>
-                  Cars
-                </label>
+                <label>Hobbies:</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="hobbies" value="cars" checked>
+                    Cars
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="hobbies" value="arts">
+                    Arts and Crafts
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="hobbies" value="computers">
+                    Computers
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="hobbies" value="sports">
+                    Sports
+                  </label>
+                </div>
+              </div><!--end of col 2-->
+              <div class="col-md-4">
+                <button type="submit" class="btn button-primary">Find my Star!</button>
               </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="hobbies" value="arts">
-                  Arts and Crafts
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="hobbies" value="computers">
-                  Computers
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="hobbies" value="sports">
-                  Sports
-                </label>
-              </div>
-            </div><!--end of col 2-->
-            <div class="col-md-4">
-              <button type="submit" class="btn button-primary">Find my Star!</button>
-            </div>
-          </div><!--end of row-->
+            </div><!--end of row-->
+          </div><!--end of blanks-->
         </form>
+        <div id="johng">
+          <div class="well">
+            <h1 class="jumbotron">You matched with John Goodman!</h1>
+          </div>
+
+        </div><!--end matches class-->
       </div><!--well end-->
     </div><!--container end-->
 
