@@ -17,7 +17,7 @@ $(document).ready(function(){
     } else if (genderInput === "man" && genderSeekingInput === "woman" && personalityInput === "extrovert" && bodytypeSeekingInput === "athletic"){
       $("#serena").show();
     } else {
-      ("#carrot-top").show();
+      $("#carrot-top").show();
     }
 
 
